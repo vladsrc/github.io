@@ -26,7 +26,7 @@ db.close((err) => {
   console.log('Closed the database connection.');
 });
 
-function Start(){
+function Startingg(){
 	db.each(`SELECT LINK as link, ROWW as roww FROM vkph 
 ORDER BY RANDOM() LIMIT 1`, (err, row) => {
     if (err) {
