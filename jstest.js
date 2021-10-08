@@ -1,6 +1,6 @@
 //import sqlite3 from 'sqlite3';
 const sqlite3 = require('sqlite3').verbose();
-
+function Startingg(){
 // open the database
 let db = new sqlite3.Database('./vkdb.db', sqlite3.OPEN_READWRITE, (err) => {
   if (err) {
@@ -26,7 +26,7 @@ db.close((err) => {
   console.log('Closed the database connection.');
 });
 
-function Startingg(){
+
 	db.each(`SELECT LINK as link, ROWW as roww FROM vkph 
 ORDER BY RANDOM() LIMIT 1`, (err, row) => {
     if (err) {
