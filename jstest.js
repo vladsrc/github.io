@@ -1,5 +1,5 @@
-import sqlite3 from 'sqlite3';
-//const sqlite3 = require('sqlite3').verbose();
+//import sqlite3 from 'sqlite3';
+const sqlite3 = require('sqlite3').verbose();
 
 // open the database
 let db = new sqlite3.Database('./vkdb.db', sqlite3.OPEN_READWRITE, (err) => {
